@@ -1,0 +1,37 @@
+"Make a 'static site', create a personal blog"
+
+Starter code in App.js, data in blog.js imported into App.
+
+1. Make a 'Header'  c o m p o n e n t  as a child of 'App' that returns:
+        - a <header> that contains: 
+            an <h1> that takes the name of the blog as a prop, called 'name'
+
+2. Make an 'About' component as a child of 'App' that returns:
+        - an <aside> that contains:
+            - <img> with 'src' of an image passed as a prop, called 'image'
+                    if no prop is passed, then default value for image should be "https://via.placeholder.com/215"
+
+                    image should be accessible(?) Give it an alt="blog logo"
+            
+            - <p> with the blog text passed in as a prop, called 'about'
+
+3. Make an 'ArticleList' component as a child of 'App' that returns:
+        - a <main> that contains:
+            - an array of 'Article' components (one component for each post passed down as a prop, called 'post', to 'ArticleList')
+            - using arrays in JSX requires each element have a unique 'key' prop
+
+4. Make an 'Article' component as a child of 'ArticleList' that returns:
+        - an <article> that contains:
+            - <h3> displaying article title passed as a prop, called 'title'
+            - <small> displaying the article date passed as a prop, called 'date'
+                    if no date prop is passed, default value should be 'January 1, 1970'
+            -<p> displaying the article preview passed as a prop, called 'preview'
+
+
+
+
+            ---------------------------------------------------------------------
+            Learned:
+
+            How to make default values for props when no prop is passed in.
+                

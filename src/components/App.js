@@ -1,15 +1,24 @@
 import React from "react";
 import blogData from "../data/blog";
+import Header from "./Header";
+import ArticleList from "./ArticleList";
+import About from "./About";
 
-console.log(blogData);
+
+console.log(blogData.posts); // prints an array
 
 function App() {
   return (
     <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
+      <Header name={blogData.name}/>
+      <About image={blogData.image}/>
+      <ArticleList post={blogData.posts}/> {/* <-- if you print 'post' in ArticleList, it prints a dictionary object of arrays*/}
+
     </div>
   );
 }
+
+
+
 
 export default App;
